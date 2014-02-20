@@ -2,16 +2,11 @@ package com.caruso.fordzisz;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.drawable.shapes.Shape;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-
-import org.apache.http.util.EncodingUtils;
 
 /**
  * Created by Caruso on 12.02.14.
@@ -46,7 +41,6 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             imageView.setBackgroundResource(R.xml.textview_background);
-            //imageView.setPadding(10, 10, 10, 10);
         } else {
             imageView = (ImageView) convertView;
         }
